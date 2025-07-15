@@ -1416,12 +1416,10 @@
                     item.Category.toLowerCase().trim() !== 'gross profit'
                 );
 
-                // Expense Growth Outpaced Profit Growth
+                // Expense Growth Outpaced Profit Growth (now using Expense Growth Alignment)
                 const outpacedCategories = insightData.filter(item => {
-                    const efficiencyAlert = String(item['Efficiency Alert'] || '').trim();
-                    return efficiencyAlert === 'Expense Outpaced Profit + Sensitive' || 
-                           efficiencyAlert === 'Expense Outpaced Profit' ||
-                           efficiencyAlert === 'Expense Outpaced Profit and Responsive';
+                    const growthAlignment = String(item['Expense Growth Alignment'] || '').trim();
+                    return growthAlignment === 'Expenses Grew Faster Than Profit';
                 });
                 
                 const expenseOutpacedElement = document.getElementById('expenseOutpacedText');
