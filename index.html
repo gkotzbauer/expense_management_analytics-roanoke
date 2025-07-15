@@ -552,10 +552,11 @@
                 <div style="margin-top: 20px; font-size: 0.9rem; color: #718096;">
                     <h4 style="color: #2d3748; margin-bottom: 10px;"><strong>Performance Diagnostic Definitions</strong></h4>
                     <ul style="padding-left: 20px; line-height: 1.6;">
-                        <li><strong>"Margin Risk – Investigate":</strong> Expense category showing significant increase requiring immediate management attention</li>
-                        <li><strong>"Cost Spike – Monitor":</strong> Expense category with notable patterns that should be closely monitored</li>
-                        <li><strong>"Stable or Fixed – Low Concern":</strong> Expense category maintaining consistent, predictable cost patterns</li>
-                        <li><strong>"Neutral – Keep Watching":</strong> Expense category with moderate changes requiring ongoing observation</li>
+                        <li><strong>Below Threshold:</strong> Expense is a one-time cost or has low volume (prior mean < $500)</li>
+                        <li><strong>Margin Risk – Continual Growth:</strong> Expense is showing consecutive months of growth and is up in the most recent month.</li>
+                        <li><strong>Margin Risk – Growth with Flat or Declining Profit:</strong> Expense grew while profit was flat or down—potential concern.</li>
+                        <li><strong>Margin Risk – Above Target:</strong> Expense grew more than 10% compared to average prior months—may require review.</li>
+                        <li><strong>Neutral – Keep Watching:</strong>  No clear risk at this time; expense growth is not triggering other flags.</li>
                     </ul>
                     
                     <h4 style="color: #2d3748; margin-bottom: 10px; margin-top: 20px;"><strong>June vs. Jan-May Mean</strong></h4>
