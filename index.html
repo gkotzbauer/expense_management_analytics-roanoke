@@ -1428,7 +1428,7 @@
                         const categoryNames = outpacedCategories.map(item => item.Category);
                         expenseOutpacedElement.textContent = `(${outpacedCategories.length}) ${categoryNames.join(', ')}`;
                     } else {
-                        expenseOutpacedElement.textContent = '(0) No categories found';
+                        expenseOutpacedElement.textContent = '(0) No expense category in the most recent month fits this metric.';
                     }
                 }
 
@@ -1474,7 +1474,7 @@
                             .join(', ');
                         topMarginElement.textContent = formattedList;
                     } else {
-                        topMarginElement.textContent = 'No expense in the most recent month fits this metric';
+                        topMarginElement.textContent = '(0) No expense category in the most recent month fits this metric.';
                     }
                 }
 
